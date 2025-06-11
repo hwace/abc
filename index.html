@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응속도 테스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer" class="game-container">
+        <div id="content" class="content">
+            <!-- 시작 화면 -->
+            <div id="startScreen" class="screen">
+                <h1 class="title">반응속도 테스트</h1>
+                <button id="startBtn" class="start-btn">시작</button>
+            </div>
+
+            <!-- 대기 화면 -->
+            <div id="waitingScreen" class="screen hidden">
+                <h2 class="message">아직 누르지 마세요!</h2>
+            </div>
+
+            <!-- 준비 화면 -->
+            <div id="readyScreen" class="screen hidden">
+                <h2 class="message">클릭!</h2>
+            </div>
+
+            <!-- 결과 화면 -->
+            <div id="resultScreen" class="screen hidden">
+                <h2 class="result-title">결과</h2>
+                <p class="result-text">
+                    반응속도: <span id="reactionTime" class="reaction-time">0ms</span>
+                </p>
+                <button id="restartBtn" class="restart-btn">다시 시작</button>
+            </div>
+
+            <!-- 실격패 화면 -->
+            <div id="failedScreen" class="screen hidden">
+                <h2 class="message">실격패</h2>
+                <button id="restartFailBtn" class="restart-fail-btn">다시 시작</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
